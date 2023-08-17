@@ -39,6 +39,9 @@ public class report extends setUpBaseClass implements ITestListener
 	String folderName ="TestReports";
 	String reportName ="E-banking Assingment";
 	String DocTitle ="E-banking";
+	String MachineName ="Lenovo";
+	String OpratingSystem ="Window 10";
+	String NameOfOprater = "Anirudh";
 	
 	public void configureExtentReport() 
 	{
@@ -48,9 +51,9 @@ public class report extends setUpBaseClass implements ITestListener
 		
 		/*Add system info/environment info to reports*/
 		
-		reports.setSystemInfo("Machine", "Lenovo");
-		reports.setSystemInfo("OS", "Window 10");
-		reports.setSystemInfo("QA", "Anirudh");
+		reports.setSystemInfo("Machine", MachineName );
+		reports.setSystemInfo("OS", OpratingSystem );
+		reports.setSystemInfo("QA", NameOfOprater);
 		
 		/*Configuration to change look report*/
 		
